@@ -14,4 +14,4 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Asfalis-Installer
-          path: src-tauri/target/bundle/dmg/*.dmg
+          path: "**/target/bundle/dmg/*.dmg"
