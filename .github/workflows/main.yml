@@ -10,7 +10,8 @@ jobs:
           node-version: 20
       - run: npm install
       - run: npm run build
-      - run: cp .output/public/200.html .output/public/index.html || cp dist/200.html dist/index.html - run: RUSTFLAGS="-C linker=clang" npx tauri build
+      - run: cp .output/public/200.html .output/public/index.html || cp dist/200.html dist/index.html
+      - run: RUSTFLAGS="-C linker=clang" npx tauri build
       - uses: actions/upload-artifact@v4
         with:
           name: Asfalis-Installer
