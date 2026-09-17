@@ -4,7 +4,7 @@
   "version": "0.1.0",
   "identifier": "com.asfalis.app",
   "build": {
-    "frontendDist": ".../../.output/public",
+    "frontendDist": "../../.output/public",
     "devUrl": "http://localhost:5173"
   },
   "app": {
