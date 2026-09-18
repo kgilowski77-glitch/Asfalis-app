@@ -7,11 +7,13 @@ jobs:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 20    
       - name: Build Desktop App
         run: |
           npm install
           npm run build
+          mkdir -p src-tauri/.output
+          cp -r .output/public src-tauri/.output/
           RUSTFLAGS="-C linker=clang" npx tauri build
       - uses: actions/upload-artifact@v4
         with:
