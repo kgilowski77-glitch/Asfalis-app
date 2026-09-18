@@ -11,7 +11,7 @@
     "windows": [
       {
         "title": "Asfalis Workspace",
-        "url": "200.html",
+        "url": "index.html",
         "width": 800,
         "height": 600,
         "resizable": true,
@@ -23,6 +23,6 @@
     }
   },
   "build": {
-    "frontendDist": "./dist"
+    "frontendDist": "."
   }
 }
