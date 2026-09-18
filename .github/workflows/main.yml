@@ -8,9 +8,11 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 20
-      - run: npm install
-      - run: npm run build
-      - run: RUSTFLAGS="-C linker=clang" npx tauri build
+      - name: Build Desktop App
+        run: |
+          npm install
+          npm run build
+          RUSTFLAGS="-C linker=clang" npx tauri build
       - uses: actions/upload-artifact@v4
         with:
           name: Asfalis-Installer
