@@ -12,13 +12,10 @@ jobs:
         run: |
           npm install
           npm run build
-          mkdir -p src-tauri/src-tauri/dist
-          cp -r .output/public/* src-tauri/src-tauri/dist/
+          mkdir -p src-tauri/dist
+          cp -r .output/public/* src-tauri/dist/
           RUSTFLAGS="-C linker=clang" npx tauri build
       - uses: actions/upload-artifact@v4
         with:
           name: Asfalis-Installer
           path: "**/target/release/bundle/macos/*"
-
-
-
