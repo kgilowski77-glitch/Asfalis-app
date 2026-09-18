@@ -23,6 +23,6 @@
     }
   },
   "build": {
-    "frontendDist": "."
+    "frontendDist": "./dist"
   }
 }
