@@ -8,9 +8,10 @@
     "devUrl": "http://localhost:5173"
   },
   "app": {
-    "windows": [
+     "windows": [
       {
         "title": "Asfalis Workspace",
+        "url": "200.html",
         "width": 800,
         "height": 600,
         "resizable": true,
